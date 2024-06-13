@@ -1,0 +1,78 @@
+﻿<UserControl x:Class="DeliveryFood.Views.AuthView"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:fw="clr-namespace:SourceChord.FluentWPF;assembly=FluentWPF"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:DeliveryFood.Views"
+             mc:Ignorable="d" d:DesignWidth="989" Height="474">
+    <Grid Margin="600,40,0,0" HorizontalAlignment="Center" Width="389" Height="506" VerticalAlignment="Center">
+        <materialDesign:TransitioningContent x:Name="TrainsitionigContentSlide" OpeningEffect="{materialDesign:TransitionEffect FadeIn}">
+            <Grid>
+                <Label x:Name="labelAuth" Content="Authorization" HorizontalContentAlignment="Center" VerticalContentAlignment="Top" Foreground="#DDE8E8E8" FontSize="36" Width="373" Margin="8,40,8,411"/>
+                <Label x:Name="labelLogin" Content="Login" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Foreground="#DDE8E8E8" Margin="69,131,69,346" FontSize="16"/>
+                <Label x:Name="labelPassword" Content="Password" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Foreground="#DDE8E8E8" Margin="69,200,69,277" FontSize="16"/>
+
+                <TextBox
+                    MaxLength="30"
+                    x:Name="textboxLogin"
+                    Style="{StaticResource MaterialDesignOutlinedTextFieldTextBox}"
+                    materialDesign:TextFieldAssist.UnderlineBrush="Black" 
+                    materialDesign:HintAssist.Foreground="Black" 
+                    Margin="69,158,69,306"
+                    Foreground="#FF2C2C2C" 
+                    CaretBrush="#FF2C2C2C" 
+                    BorderBrush="#89838383" 
+                    SelectionBrush="#FF327AD1">
+                    <TextBox.Background>
+                        <SolidColorBrush Color="#FFC6C6FF"/>
+                    </TextBox.Background>
+                </TextBox>
+                <TextBox
+                MaxLength="30"
+                x:Name="textboxPass"
+                Style="{StaticResource MaterialDesignOutlinedTextFieldTextBox}"
+                materialDesign:TextFieldAssist.UnderlineBrush="Black" 
+                materialDesign:HintAssist.Foreground="Black" 
+                Margin="69,229,69,236"
+                Foreground="#FF2C2C2C" 
+                CaretBrush="#FF2C2C2C" 
+                BorderBrush="#89838383" 
+                SelectionBrush="#FF327AD1">
+                    <TextBox.Background>
+                        <SolidColorBrush Color="#FFC6C6FF"/>
+                    </TextBox.Background>
+                </TextBox>
+
+                <Button
+                    Style="{StaticResource MaterialDesignRaisedAccentButton}"
+                    Width="101"
+                    Margin="144,298,144,172" 
+                    x:Name="btnInput" 
+                    BorderBrush="#FF0C0C0C" 
+                    Foreground="#FF292929" 
+                    FontSize="18" 
+                    Height="36" Click="btnInput_Click">
+                    <Button.Background>
+                        <SolidColorBrush Color="#FFC6C6FF"/>
+                    </Button.Background>
+                    Log In
+                </Button>
+                <Button
+                    x:Name="btnPass"
+                    Style="{StaticResource MaterialDesignRaisedAccentButton}"
+                    Margin="124,340,124,139" 
+                    Foreground="#DDE4E4E4"
+                    FontSize="14" 
+                    Content="Forgot your password?" 
+                    Background="#5F2B2B2B" Height="Auto" Click="btnPass_Click">
+                    <Button.BorderBrush>
+                        <SolidColorBrush Color="#FF080B0E" Opacity="0.5"/>
+                    </Button.BorderBrush>
+                </Button>
+            </Grid>
+        </materialDesign:TransitioningContent>
+        <Label x:Name="checkAuth" HorizontalContentAlignment="Center" VerticalContentAlignment="Top" Foreground="#DDF00C0C" Margin="69,373,69,104" FontSize="16" Background="{x:Null}"/>
+    </Grid>
+</UserControl>

@@ -1,0 +1,62 @@
+﻿<UserControl x:Class="DeliveryFood.Views.LanchView"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:DeliveryFood.Views"
+      mc:Ignorable="d" 
+      d:DesignHeight="501" d:DesignWidth="729">
+
+    <Grid>
+        <Rectangle Margin="712,0,0,0" Fill="#FF1B1B1B"/>
+        <materialDesign:TransitioningContent x:Name="TrainsitionigContentSlide" OpeningEffect="{materialDesign:TransitionEffect FadeIn}" Grid.ColumnSpan="2" Grid.RowSpan="2">
+            <ScrollViewer Margin="-10,0,1,0">
+                <Grid HorizontalAlignment="Center" Margin="32,0,-8,0" Width="705">
+                    <WrapPanel Width="679" HorizontalAlignment="Center" Margin="14,0,12,10">
+                        <ListViewItem Height="330" Width="216" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" MouseEnter="ListViewItem_MouseEnter" MouseLeave="ListViewItem_MouseLeave">
+                            <materialDesign:Card Height="314" Width="200" Background="#FF131313">
+                                <Grid Background="#FF131313">
+                                    <Label Margin="0,10,0,272" FontFamily="Showcard Gothic" FontSize="16" Content="LUNCH №1" Foreground="#FFEEC200" FontWeight="Bold" HorizontalContentAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" materialDesign:RippleAssist.Feedback="Transparent"/>
+                                    <Image Source="/img/food/lanch/lanch_1.jpeg" Stretch="Uniform" Margin="0,45,0,114" />
+                                    <Label Content="139 $" HorizontalContentAlignment="Center" Margin="0,245,0,40" Foreground="#FFEEC200" FontSize="16" Background="Transparent"/>
+                                    <Button Content="ADD TO CART" Background="#FFEEC200" BorderBrush="#FF131313" Foreground="#DD000000" Margin="5,276,5,5" Height="Auto"></Button>
+                                </Grid>
+                            </materialDesign:Card>
+                        </ListViewItem>
+                        <ListViewItem Height="330" Width="216" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" MouseEnter="ListViewItem_MouseEnter" MouseLeave="ListViewItem_MouseLeave">
+                            <materialDesign:Card Height="314" Width="200" Background="#FF131313">
+                                <Grid Background="#FF131313">
+                                    <Label Margin="0,10,0,272" FontFamily="Showcard Gothic" FontSize="16" Content="LUNCH №2" Foreground="#FFEEC200" FontWeight="Bold" HorizontalContentAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" materialDesign:RippleAssist.Feedback="Transparent"/>
+                                    <Image Source="/DeliveryFood;component/img/food/Lanch/lanch_2.jpeg" Stretch="Uniform" Margin="0,45,0,114" />
+                                    <Label Content="139 $" HorizontalContentAlignment="Center" Margin="0,245,0,40" Foreground="#FFEEC200" FontSize="16" Background="Transparent"/>
+                                    <Button Content="ADD TO CART" Background="#FFEEC200" BorderBrush="#FF131313" Foreground="#DD000000" Margin="5,276,5,5" Height="Auto"/>
+                                </Grid>
+                            </materialDesign:Card>
+                        </ListViewItem>
+                        <ListViewItem Height="330" Width="216" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" MouseEnter="ListViewItem_MouseEnter" MouseLeave="ListViewItem_MouseLeave">
+                            <materialDesign:Card Height="314" Width="200" Background="#FF131313">
+                                <Grid Background="#FF131313">
+                                    <Label Margin="0,10,0,272" FontFamily="Showcard Gothic" FontSize="16" Content="LUNCH №3" Foreground="#FFEEC200" FontWeight="Bold" HorizontalContentAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" materialDesign:RippleAssist.Feedback="Transparent"/>
+                                    <Image Source="/DeliveryFood;component/img/food/Lanch/lanch_3.jpeg" Stretch="Uniform" Margin="0,45,0,114" />
+                                    <Label Content="139 $" HorizontalContentAlignment="Center" Margin="0,245,0,40" Foreground="#FFEEC200" FontSize="16" Background="Transparent"/>
+                                    <Button Content="ADD TO CART" Background="#FFEEC200" BorderBrush="#FF131313" Foreground="#DD000000" Margin="5,276,5,5" Height="Auto"/>
+                                </Grid>
+                            </materialDesign:Card>
+                        </ListViewItem>
+                        <ListViewItem Height="330" Width="216" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" MouseEnter="ListViewItem_MouseEnter" MouseLeave="ListViewItem_MouseLeave">
+                            <materialDesign:Card Height="314" Width="200" Background="#FF131313">
+                                <Grid Background="#FF131313">
+                                    <Label Margin="0,10,0,272" FontFamily="Showcard Gothic" FontSize="16" Content="LUNCH №4" Foreground="#FFEEC200" FontWeight="Bold" HorizontalContentAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" materialDesign:RippleAssist.Feedback="Transparent"/>
+                                    <Image Source="/DeliveryFood;component/img/food/Lanch/lanch_4.jpeg" Stretch="Uniform" Margin="0,45,0,114" />
+                                    <Label Content="139 $" HorizontalContentAlignment="Center" Margin="0,245,0,40" Foreground="#FFEEC200" FontSize="16" Background="Transparent"/>
+                                    <Button Content="ADD TO CART" Background="#FFEEC200" BorderBrush="#FF131313" Foreground="#DD000000" Margin="5,276,5,5" Height="Auto"/>
+                                </Grid>
+                            </materialDesign:Card>
+                        </ListViewItem>
+                    </WrapPanel>
+                </Grid>
+            </ScrollViewer>
+        </materialDesign:TransitioningContent>
+    </Grid>
+</UserControl>

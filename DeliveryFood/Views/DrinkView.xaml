@@ -1,0 +1,121 @@
+﻿<UserControl x:Class="DeliveryFood.Views.DrinkView"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:DeliveryFood.Views"
+      mc:Ignorable="d" 
+      d:DesignHeight="501" d:DesignWidth="729">
+
+    <Grid>
+        <Rectangle Margin="712,0,0,0" Fill="#FF1B1B1B"/>
+        <materialDesign:TransitioningContent x:Name="TrainsitionigContentSlide" OpeningEffect="{materialDesign:TransitionEffect FadeIn}" Grid.ColumnSpan="2" Grid.RowSpan="2">
+            <ScrollViewer Margin="-10,0,1,0">
+                <Grid HorizontalAlignment="Center" Margin="32,0,-8,0" Width="705">
+                    <WrapPanel Width="679" Height="1000" HorizontalAlignment="Center" Margin="14,0,12,0">
+                        <ListViewItem Height="330" Width="216" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" MouseEnter="ListViewItem_MouseEnter" MouseLeave="ListViewItem_MouseLeave">
+                            <materialDesign:Card Height="314" Width="200" Background="#FF131313">
+                                <Grid Background="#FF131313">
+                                    <Label Margin="0,10,0,272" FontFamily="Showcard Gothic" FontSize="16" Content="PEPSI" Foreground="#FFEEC200" FontWeight="Bold" HorizontalContentAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" materialDesign:RippleAssist.Feedback="Transparent"/>
+                                    <Image Source="/img/food/drink/pepsi.jpeg" Stretch="Uniform" Margin="0,45,0,114" />
+                                    <Label Content="0,5 L" HorizontalContentAlignment="Center" Margin="10,200,10,89" Foreground="#FFEEC200"/>
+                                    <Label Content="21 $" HorizontalContentAlignment="Center" Margin="0,245,0,40" Foreground="#FFEEC200" FontSize="16" Background="Transparent"/>
+                                    <Button Content="ADD TO CART" Background="#FFEEC200" BorderBrush="#FF131313" Foreground="#DD000000" Margin="5,276,5,5" Height="Auto"></Button>
+                                </Grid>
+                            </materialDesign:Card>
+                        </ListViewItem>
+                        <ListViewItem Height="330" Width="216" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" MouseEnter="ListViewItem_MouseEnter" MouseLeave="ListViewItem_MouseLeave">
+                            <materialDesign:Card Height="314" Width="200" Background="#FF131313">
+                                <Grid Background="#FF131313">
+                                    <Label Margin="0,10,0,272" FontFamily="Showcard Gothic" FontSize="16" Content="MIRINDA" Foreground="#FFEEC200" FontWeight="Bold" HorizontalContentAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" materialDesign:RippleAssist.Feedback="Transparent"/>
+                                    <Image Source="/DeliveryFood;component/img/food/drink/mirinda.jpeg" Stretch="Uniform" Margin="0,45,0,114" />
+                                    <Label Content="0,5 L" HorizontalContentAlignment="Center" Margin="10,200,10,89" Foreground="#FFEEC200"/>
+                                    <Label Content="21 $" HorizontalContentAlignment="Center" Margin="0,245,0,40" Foreground="#FFEEC200" FontSize="16" Background="Transparent"/>
+                                    <Button Content="ADD TO CART" Background="#FFEEC200" BorderBrush="#FF131313" Foreground="#DD000000" Margin="5,276,5,5" Height="Auto"/>
+                                </Grid>
+                            </materialDesign:Card>
+                        </ListViewItem>
+                        <ListViewItem Height="330" Width="216" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" MouseEnter="ListViewItem_MouseEnter" MouseLeave="ListViewItem_MouseLeave">
+                            <materialDesign:Card Height="314" Width="200" Background="#FF131313">
+                                <Grid Background="#FF131313">
+                                    <Label Margin="0,10,0,272" FontFamily="Showcard Gothic" FontSize="16" Content="7 UP" Foreground="#FFEEC200" FontWeight="Bold" HorizontalContentAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" materialDesign:RippleAssist.Feedback="Transparent"/>
+                                    <Image Source="/DeliveryFood;component/img/food/drink/7.jpeg" Stretch="Uniform" Margin="0,45,0,114" />
+                                    <Label Content="0,5 L" HorizontalContentAlignment="Center" Margin="10,200,10,89" Foreground="#FFEEC200"/>
+                                    <Label Content="21 $" HorizontalContentAlignment="Center" Margin="0,245,0,40" Foreground="#FFEEC200" FontSize="16" Background="Transparent"/>
+                                    <Button Content="ADD TO CART" Background="#FFEEC200" BorderBrush="#FF131313" Foreground="#DD000000" Margin="5,276,5,5" Height="Auto"/>
+                                </Grid>
+                            </materialDesign:Card>
+                        </ListViewItem>
+                        <ListViewItem Height="330" Width="216" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" MouseEnter="ListViewItem_MouseEnter" MouseLeave="ListViewItem_MouseLeave">
+                            <materialDesign:Card Height="314" Width="200" Background="#FF131313">
+                                <Grid Background="#FF131313">
+                                    <Label Margin="0,10,0,272" FontFamily="Showcard Gothic" FontSize="16" Content="ORANGE" Foreground="#FFEEC200" FontWeight="Bold" HorizontalContentAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" materialDesign:RippleAssist.Feedback="Transparent"/>
+                                    <Image Source="/DeliveryFood;component/img/food/drink/apelsin.jpeg" Stretch="Uniform" Margin="0,45,0,114" />
+                                    <Label Content="0,95 L" HorizontalContentAlignment="Center" Margin="10,200,10,89" Foreground="#FFEEC200"/>
+                                    <Label Content="55 $" HorizontalContentAlignment="Center" Margin="0,245,0,40" Foreground="#FFEEC200" FontSize="16" Background="Transparent"/>
+                                    <Button Content="ADD TO CART" Background="#FFEEC200" BorderBrush="#FF131313" Foreground="#DD000000" Margin="5,276,5,5" Height="Auto"/>
+                                </Grid>
+                            </materialDesign:Card>
+                        </ListViewItem>
+                        <ListViewItem Height="330" Width="216" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" MouseEnter="ListViewItem_MouseEnter" MouseLeave="ListViewItem_MouseLeave">
+                            <materialDesign:Card Height="314" Width="200" Background="#FF131313">
+                                <Grid Background="#FF131313">
+                                    <Label Margin="0,10,0,272" FontFamily="Showcard Gothic" FontSize="16" Content="JACK DANIELS" Foreground="#FFEEC200" FontWeight="Bold" HorizontalContentAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" materialDesign:RippleAssist.Feedback="Transparent"/>
+                                    <Image Source="/DeliveryFood;component/img/food/drink/jack_daniels.jpeg" Stretch="Uniform" Margin="0,45,0,114" />
+                                    <Label Content="1 L" HorizontalContentAlignment="Center" Margin="10,200,10,89" Foreground="#FFEEC200"/>
+                                    <Label Content="789 $" HorizontalContentAlignment="Center" Margin="0,245,0,40" Foreground="#FFEEC200" FontSize="16" Background="Transparent"/>
+                                    <Button Content="ADD TO CART" Background="#FFEEC200" BorderBrush="#FF131313" Foreground="#DD000000" Margin="5,276,5,5" Height="Auto"/>
+                                </Grid>
+                            </materialDesign:Card>
+                        </ListViewItem>
+                        <ListViewItem Height="330" Width="216" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" MouseEnter="ListViewItem_MouseEnter" MouseLeave="ListViewItem_MouseLeave">
+                            <materialDesign:Card Height="314" Width="200" Background="#FF131313">
+                                <Grid Background="#FF131313">
+                                    <Label Margin="0,10,0,272" FontFamily="Showcard Gothic" FontSize="16" Content="MARTINI BIANCO" Foreground="#FFEEC200" FontWeight="Bold" HorizontalContentAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" materialDesign:RippleAssist.Feedback="Transparent"/>
+                                    <Image Source="/DeliveryFood;component/img/food/drink/martini_bianco.jpeg" Stretch="Uniform" Margin="0,45,0,114" />
+                                    <Label Content="1 L" HorizontalContentAlignment="Center" Margin="10,200,10,89" Foreground="#FFEEC200"/>
+                                    <Label Content="299 $" HorizontalContentAlignment="Center" Margin="0,245,0,40" Foreground="#FFEEC200" FontSize="16" Background="Transparent"/>
+                                    <Button Content="ADD TO CART" Background="#FFEEC200" BorderBrush="#FF131313" Foreground="#DD000000" Margin="5,276,5,5" Height="Auto"/>
+                                </Grid>
+                            </materialDesign:Card>
+                        </ListViewItem>
+                        <ListViewItem Height="330" Width="216" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" MouseEnter="ListViewItem_MouseEnter" MouseLeave="ListViewItem_MouseLeave">
+                            <materialDesign:Card Height="314" Width="200" Background="#FF131313">
+                                <Grid Background="#FF131313">
+                                    <Label Margin="0,10,0,272" FontFamily="Showcard Gothic" FontSize="16" Content="MARTINI ASTI" Foreground="#FFEEC200" FontWeight="Bold" HorizontalContentAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" materialDesign:RippleAssist.Feedback="Transparent"/>
+                                    <Image Source="/DeliveryFood;component/img/food/drink/martini_asti.jpeg" Stretch="Uniform" Margin="0,45,0,114" />
+                                    <Label Content="0,75 L" HorizontalContentAlignment="Center" Margin="10,200,10,89" Foreground="#FFEEC200"/>
+                                    <Label Content="369 $" HorizontalContentAlignment="Center" Margin="0,245,0,40" Foreground="#FFEEC200" FontSize="16" Background="Transparent"/>
+                                    <Button Content="ADD TO CART" Background="#FFEEC200" BorderBrush="#FF131313" Foreground="#DD000000" Margin="5,276,5,5" Height="Auto"/>
+                                </Grid>
+                            </materialDesign:Card>
+                        </ListViewItem>
+                        <ListViewItem Height="330" Width="216" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" MouseEnter="ListViewItem_MouseEnter" MouseLeave="ListViewItem_MouseLeave">
+                            <materialDesign:Card Height="314" Width="200" Background="#FF131313">
+                                <Grid Background="#FF131313">
+                                    <Label Margin="0,10,0,272" FontFamily="Showcard Gothic" FontSize="16" Content="DURUJI VALLEY" Foreground="#FFEEC200" FontWeight="Bold" HorizontalContentAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" materialDesign:RippleAssist.Feedback="Transparent"/>
+                                    <Image Source="/DeliveryFood;component/img/food/drink/wine_saperavi.jpeg" Stretch="Uniform" Margin="0,45,0,114" />
+                                    <Label Content="0,75 L" HorizontalContentAlignment="Center" Margin="10,200,10,89" Foreground="#FFEEC200"/>
+                                    <Label Content="369 $" HorizontalContentAlignment="Center" Margin="0,245,0,40" Foreground="#FFEEC200" FontSize="16" Background="Transparent"/>
+                                    <Button Content="ADD TO CART" Background="#FFEEC200" BorderBrush="#FF131313" Foreground="#DD000000" Margin="5,276,5,5" Height="Auto"/>
+                                </Grid>
+                            </materialDesign:Card>
+                        </ListViewItem>
+                        <ListViewItem Height="330" Width="216" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" MouseEnter="ListViewItem_MouseEnter" MouseLeave="ListViewItem_MouseLeave">
+                            <materialDesign:Card Height="314" Width="200" Background="#FF131313">
+                                <Grid Background="#FF131313">
+                                    <Label Margin="0,10,0,272" FontFamily="Showcard Gothic" FontSize="16" Content="KHORTYTSIA ICE" Foreground="#FFEEC200" FontWeight="Bold" HorizontalContentAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" materialDesign:RippleAssist.Feedback="Transparent"/>
+                                    <Image Source="/DeliveryFood;component/img/food/drink/horticya_ice.jpeg" Stretch="Uniform" Margin="0,45,0,114" />
+                                    <Label Content="0,5 L" HorizontalContentAlignment="Center" Margin="10,200,10,89" Foreground="#FFEEC200"/>
+                                    <Label Content="139 $" HorizontalContentAlignment="Center" Margin="0,245,0,40" Foreground="#FFEEC200" FontSize="16" Background="Transparent"/>
+                                    <Button Content="ADD TO CART" Background="#FFEEC200" BorderBrush="#FF131313" Foreground="#DD000000" Margin="5,276,5,5" Height="Auto"/>
+                                </Grid>
+                            </materialDesign:Card>
+                        </ListViewItem>
+                    </WrapPanel>
+                </Grid>
+            </ScrollViewer>
+        </materialDesign:TransitioningContent>
+    </Grid>
+</UserControl>
